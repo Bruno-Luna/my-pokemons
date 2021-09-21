@@ -1,0 +1,18 @@
+ /* Versão 1.0  */
+ 
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  text-align: center;
+}
+
+#container{
+  width: 200px;
+  background-color: lightgreen;
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px black;
+  margin: 10% auto 10px;
+  padding: 5px;
+}
