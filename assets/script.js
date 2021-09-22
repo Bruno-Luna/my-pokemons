@@ -6,11 +6,11 @@ function loadpk() {
 
     fetch(url)
         .then((response) => {
-            // esperamos receber em formato json
+           
             return response.json();
         })
         .then((data) => {
-            // o que faremos com os dados informados no json
+          
             console.clear;
             console.log(data);
             document.getElementById('nome').innerHTML = data['name'].toUpperCase();
