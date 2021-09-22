@@ -17,6 +17,13 @@ html, body{
   padding: 5px;
 }
 
+#nome{
+  letter-spacing: 2px;
+}
+#pic{
+    width:70%;
+}
+
 .buttons {
   padding: 10px;
   width: 200px;

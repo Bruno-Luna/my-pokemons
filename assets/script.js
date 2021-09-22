@@ -13,8 +13,8 @@ function loadpk() {
             // o que faremos com os dados informados no json
             console.clear;
             console.log(data);
-            document.getElementById('nome').innerHTML = data['name'];
-            document.getElementById('numero').innerHTML = data['id'];
+            document.getElementById('nome').innerHTML = data['name'].toUpperCase();
+            document.getElementById('numero').innerHTML ='#' + data['id'];
             let img = data['sprites']['front_default'];
             document.getElementById('pic').setAttribute('src', img);
         })
