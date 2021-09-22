@@ -1,5 +1,8 @@
 function loadpk() {
-    var url = 'http://pokeapi.co/api/v2/pokemon/25';
+    let pokeInput = document.querySelector('#pokeInput');
+
+    var nameOrId = pokeInput.value;
+    var url = 'http://pokeapi.co/api/v2/pokemon/' + nameOrId.toLowerCase();
 
     fetch(url)
         .then((response) => {
