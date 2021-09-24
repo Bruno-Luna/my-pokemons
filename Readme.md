@@ -1,7 +1,9 @@
 <p align= "center">
     <img src="https://github.com/Bruno-Luna/my-pokemons/blob/main/assets/img/project/logo.png" style="zoom:85%;"/>
 </p>
-***Monte um time com os seus pokémons preferidos e aprenda sobre eles!***
+
+
+<b>Monte um time com os seus pokémons preferidos e aprenda sobre eles.</b>
 
  Utilizando a PokeAPI, este projeto front-end te permite criar um time com até 6 pokémons, exibindo informações sobre eles de maneira simples e objetiva! 
 
@@ -36,9 +38,9 @@ O código da versão 1.0 é ensinado por André Luiz França Batista em duas ví
 (Screenshot da aplicação v1.0)
 
 
-## 👷‍♂️👷‍♂️:: Em costrução  por :: 🚧🚧
+## 👷‍♂️👷‍♂️:: Em construção  por :: 🚧🚧
 
 | [Bruno Luna](https://www.linkedin.com/in/bruno-luna-11590720a/) |   [Isaías Rodrigues](https://www.linkedin.com/in/isaiasz/)   |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="https://github.com/Bruno-Luna/my-pokemons/blob/main/assets/img/dev_team/br-luna.jpg" style="zoom:15%;" /> | <img src="https://github.com/Bruno-Luna/my-pokemons/blob/main/assets/img/dev_team/isa-rodrigues.jpg" style="zoom:15%;" /> |
+| <img src="https://github.com/Bruno-Luna/my-pokemons/blob/main/assets/img/dev_team/br-luna.jpg" width="35%;" /> | <img src="https://github.com/Bruno-Luna/my-pokemons/blob/main/assets/img/dev_team/isa-rodrigues.jpg" width="35%;" /> |
 
