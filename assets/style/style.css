@@ -1,7 +1,9 @@
- /* Versão 1.0  */
- 
-*{
+ *{
+  list-style: none;
   box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 html, body{
@@ -45,7 +47,6 @@ html, body{
   color: #083962;
   font-weight: bold;
   font-size: 17px;
-  text-decoration: none;
   padding-bottom: 4px;
   border-bottom: 1px solid #E46043;
 }
@@ -57,14 +58,46 @@ html, body{
 }
 
 /* Content */
+
+main{
+  width: 100vw;
+  height: 100vh;
+}
+
+main .text{
+  margin: 2.8rem 0;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+
+main .buttons{
+  width: 100vw;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+
+}
+
+main .buttons input{
+  width: 40vw;
+  font-size: 1.4rem;
+}
+
+main .buttons button{
+  width: 10rem;
+  height: 3rem;
+}
+
+
 #container{
   text-align: center;
-  width: 200px;
+  width: 14%;
+  height: 30%;
   background-color: lightgreen;
   border-radius: 10px;
   box-shadow: 5px 5px 3px black;
-  margin: 10% auto 10px;
-  padding: 5px;
+  margin: 2rem auto;
 }
 
 #nome{
@@ -75,16 +108,9 @@ html, body{
     width:70%;
 }
 
-.buttons {
-  padding: 10px;
-  width: 200px;
-  margin: auto;
-  text-align: center;
+button{
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
-.center {
-  margin: auto;
-  display: block;
-  margin-top: 10px;
-}
 
