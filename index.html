@@ -8,12 +8,9 @@
     <title>My_Pokemon</title>
 </head>
 <body>
-
-    <footer>
-        <div class="nav">
+    <header>
+        <nav class="nav">
             <img src="assets/img/project/logo.png" alt="Logo My Pokemons" class="logo">
-            <!--
-            <div class="menu"> -->
                 <ul>
                     <li>
                         <a href="#" class="item-menu">Home</a>
@@ -22,23 +19,25 @@
                         <a href="#" class="item-menu">Sobre</a>
                     </li>
                 </ul>
-            <!--
-            </div> -->
-        </div>
-    </footer>
+        </nav>
+    </header>
     
-    <div id="container">
-        <h2 id="nome">nome</h2>
-        <img id='pic'>
-        <h2 id="numero">numero</h2>
-    </div>
-       
-    <div class="buttons">
-        <label for="text">Digite o Nome ou o Número de um Pokémon</label>
-        <input type="text" id="pokeInput" class="center">
-        <button id="btn1" class="center">Carregar</button>
-    </div>
+    <main>
+        <div class="text">
+            <label for="text">Escolha sua equipe Pokemon:</label>
+        </div>
+        <div class="buttons">
+            <input type="text" placeholder="Digite o nome ou o número de um Pokémon" id="pokeInput">
+            <button id="btn1">Carregar</button>
+        </div>    
 
+        <div id="container">
+            <h2 id="nome">nome</h2>
+            <img id='pic'>
+            <h2 id="numero">numero</h2>
+        </div>   
+    </main>
+   
      
      
      <script src="assets/script.js"></script>
