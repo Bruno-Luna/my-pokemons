@@ -89,6 +89,20 @@ main .buttons button{
   height: 3rem;
 }
 
+.card {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+  margin-top: 40px;
+  height: 320px;
+  width: 256px;
+  border-radius: 20px;
+  border: 1.6px solid black;
+  background-color: #3760A6;
+}
+
 
 #container{
   text-align: center;
@@ -100,12 +114,71 @@ main .buttons button{
   margin: 2rem auto;
 }
 
+/* Melhorando o código */
+.m-auto-texto-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* fim - melhorando o codigo */
+
+.nome_default {
+  width: 95%;
+  color: azure;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 33px;
+  text-align: center;
+}
+
+.shadow {text-shadow: -1px 0px 8px rgba(0,0,0,1);
+}
+
+.numero_default {
+  width: 80%;
+  height: 40px;
+  display: inline-block;
+  color: yellow;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  position: relative;
+}
+
+.imagem_default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  margin-bottom: 28px;
+}
+
+
 #nome{
+  color:#ececec;
+  position: relative;
   letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 33px;
 }
 
 #pic{
-    width:70%;
+  width: 80px;
+  height: 80px;
+}
+
+#numero {
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 33px;
+  color:#ececec;
 }
 
 button{
