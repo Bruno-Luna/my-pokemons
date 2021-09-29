@@ -70,7 +70,7 @@ main .text{
 
 
 main .buttons{
-  width: 100vw;
+  width: 100%;
   gap: 20px;
   display: flex;
   justify-content: center;
@@ -131,7 +131,8 @@ main .buttons button{
   text-align: center;
 }
 
-.shadow {text-shadow: -1px 0px 8px rgba(0,0,0,1);
+.shadow {
+  text-shadow: -1px 0px 8px rgba(0,0,0,1);
 }
 
 .numero_default {
@@ -164,6 +165,8 @@ main .buttons button{
   font-weight: 500;
   font-style: normal;
   line-height: 33px;
+  text-shadow: -1px 3px 3px rgba(0,0,0,1);
+  
 }
 
 #pic{
@@ -177,12 +180,92 @@ main .buttons button{
   font-style: normal;
   line-height: 33px;
   color:#ececec;
+  text-shadow: 2px 2px 3px rgba(0,0,0,1);
 }
 
 button{
   font-size: 1.2rem;
   cursor: pointer;
 }
+
+/* Cores dos Card Backgrounds */
+.bug {
+  background-color: #BAF862 !important;
+}
+
+.dark {
+  background-color: #595978;
+}
+
+.dragon {
+  background-color: #448A95;
+}
+
+.electric {
+  background-color: #F6D54A;
+}
+
+.fairy {
+  background-color: #E91368;
+}
+
+.fighting {
+  background-color: #FF4041;
+}
+
+.fire {
+  background-color: #EE6241;
+}
+
+.flying {
+  background-color: #94B2C7;
+}
+
+.ghost {
+  background-color: #595978;
+}
+
+.grass {
+  background-color: #27CB50;
+}
+
+.ground {
+  background-color: #6E491F;
+}
+
+.ice {
+  background-color: #86D2F5;
+}
+
+.normal {
+  background-color: #60756E;
+}
+
+.poison {
+  background-color: #595978;
+}
+
+.psychic {
+  background-color: #E91368;
+}
+
+.rock {
+  background-color: #48190B;
+}
+
+.steel {
+  background-color: #43BD94;
+}
+
+.water {
+  background-color: #94D5CD;
+}
+
+/* Fim das cores dos Cards Backgrounds*/
+
+
+
+
 
 
 /* Media Queries */
@@ -228,3 +311,4 @@ button{
   }
 
 }
+
