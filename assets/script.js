@@ -65,6 +65,8 @@ function limpar() {
     document.getElementById('numero').innerHTML = 'Pokémon'
     document.getElementById('numero').setAttribute('class', 'numero_default shadow')
 
+    document.getElementById('pokeInput').value =''
+
 }
 
 document.getElementById('btn1').onclick = todasFuncoes
