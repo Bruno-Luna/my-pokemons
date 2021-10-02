@@ -59,7 +59,7 @@ html, body{
 
 main{
   width: 100%;
-  height: 100vh;
+  height: 70vh;
 }
 
 main .text{
@@ -263,7 +263,30 @@ button{
 /* Fim das cores dos Cards Backgrounds*/
 
 
+/*  FOOTER */
 
+footer{
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p{
+  font-size: .9rem;
+}
+
+footer p.text-direitos{
+  font-size: .8rem;
+  text-align: center;
+}
+
+footer p a{
+  font-weight: 500;
+}
+
+footer p a:hover{
+  text-decoration:underline;
+}
 
 
 
