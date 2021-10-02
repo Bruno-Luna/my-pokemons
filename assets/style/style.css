@@ -136,7 +136,6 @@ main .buttons button{
 }
 
 .numero_default {
-  width: 80%;
   height: 40px;
   display: inline-block;
   color: yellow;
@@ -174,7 +173,7 @@ main .buttons button{
   height: 80px;
 }
 
-#numero {
+.estilo_numero {
   font-size: 30px;
   font-weight: 500;
   font-style: normal;
