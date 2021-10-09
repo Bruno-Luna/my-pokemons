@@ -226,6 +226,7 @@ button{
   display: block;
   margin-bottom: 15px;
   color: #27CB50;
+  text-shadow: 2px 2px 0px #181818;
 }
 
 .search{
@@ -334,13 +335,17 @@ button{
 /*  FOOTER */
 
 footer{
-  height: 20vh;
+  border-top: 1px solid rgb(26, 26, 26);
+  height: 12vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #083962;
+  color: wheat;
+
 }
 footer p{
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 footer p.text-direitos{
@@ -350,6 +355,7 @@ footer p.text-direitos{
 
 footer p a{
   font-weight: 500;
+  color: #eec214;
 }
 
 footer p a:hover{
