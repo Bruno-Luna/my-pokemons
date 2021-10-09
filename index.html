@@ -24,13 +24,18 @@
     
     <body>
         <main>
-            <label for="text">Escolha sua equipe Pokemon:</label>
-            <form class="inputs-buttons">
-                    <input type="text" placeholder="Digite o nome ou o número de um Pokémon" id="pokeInput">
-                    <br>
-                    <button id="btn1">Carregar</button>
-                    <button id="btnLimpar">Limpar</button>
-            </form>    
+            <label for="text" class="labelSearch">Escolha sua equipe Pokemon:</label>
+            <!--<form class="inputs-buttons"></form> -->
+                <div class="search">
+                    <input type="text" class="pokeInput" placeholder="Digite o nome ou o número de um Pokémon" id="pokeInput">
+                    
+                    <button id="btn1" class="btn btn-pesquisar fire"></button>
+                    
+                    <button id="btnLimpar" class="btn btn-limpar electric">Limpar</button>
+                   
+                </div>
+                
+            <!--</form>    -->
 
         <div class="card" id="card">
             <div id="nome">

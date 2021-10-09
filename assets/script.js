@@ -25,7 +25,8 @@ function loadpk() {
 }
 
 function changeCardColor() {
-    var pokeInput = document.querySelector('#pokeInput');
+    var pokeInput = document.getElementById('pokeInput');
+    console.log(pokeInput.value)
 
     var nameOrId = pokeInput.value;
     var url = 'http://pokeapi.co/api/v2/pokemon/' + nameOrId.toLowerCase();
@@ -39,12 +40,16 @@ function changeCardColor() {
             let type = data['types']['0']['type']['name']; 
             backgroundType += type; 
             document.getElementById('card').setAttribute('class', backgroundType);
+            
+        console.log(pokeInput)
           
 
         })
         .catch((erro) => {
             console.log("erro: " + erro);
         })
+
+        console.log(pokeInput + nameOrId + url)
 };
 
 function todasFuncoes() {
@@ -66,6 +71,7 @@ function limpar() {
     document.getElementById('numero').setAttribute('class', 'numero_default shadow')
 
     document.getElementById('pokeInput').value =''
+
 
 }
 
