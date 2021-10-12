@@ -336,7 +336,7 @@ button{
 
 footer{
   border-top: 1px solid rgb(26, 26, 26);
-  height: 12vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,7 +345,7 @@ footer{
 
 }
 footer p{
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
 footer p.text-direitos{

@@ -1,0 +1,171 @@
+*{
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #313131;
+  }
+  
+  /* Nav */
+  .nav {
+    background-color: #FF6B4A;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+  }
+  
+  .logo {
+    height: 47px;
+    width: 160px;
+    margin: 10px 80px;
+  }
+  
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-around;
+    width: 25%;
+    margin-right: 30px;
+  }
+  
+  .nav li {
+    display: inline-block;
+  }
+  
+  .item-menu {
+    text-transform: uppercase;
+    color: #083962;
+    font-weight: bold;
+    font-size: 17px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #E46043;
+  }
+  
+  .item-menu:hover {
+    color: #1F2020;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #1F2020;
+  }
+  
+  /* MAIN */
+  
+  main{
+    height: 85vh;
+    width: 100%;
+  }
+
+  main .container{
+    width: 100%;
+    height: 70vh;
+  
+    color: white;
+  }
+
+  /* .imgLuna img, .imgIsa img {
+    border-radius: 100%;
+    box-shadow: 0px 0px 100px;
+  } */
+
+ main .container .boxLuna .contentLuna,
+ main .container .boxIsa .contentIsa{
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+main .container .boxLuna .contentLuna img,
+main .container .boxIsa .contentIsa img{
+  border-radius: 100%;
+}
+
+  /*  FOOTER */
+  
+  footer{
+    border-top: 1px solid rgb(26, 26, 26);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #083962;
+    color: wheat;
+  
+  }
+  footer p{
+    font-size: .9rem;
+  }
+  
+  footer p.text-direitos{
+    font-size: .8rem;
+    text-align: center;
+  }
+  
+  footer p a{
+    font-weight: 500;
+    color: #eec214;
+  }
+  
+  footer p a:hover{
+    text-decoration:underline;
+  }
+  
+  
+  
+  /* Media Queries */
+  
+  @media only screen and (min-width:400px) and (max-width:615px){
+  
+  
+    /* NAV */
+  
+    .nav {
+      display: flex;
+      justify-content: flex-start; 
+      height: 80px;
+    }
+    
+    .logo {
+      margin-left: .4rem;
+      margin: auto;
+    }
+    
+    .nav ul {
+      width: 45%;
+      margin-right: 0px;
+    }
+  
+  }
+  
+  @media only screen and (min-width:250px) and (max-width:420px){
+  
+    .nav {
+      height: 80px;
+    }
+  
+    .logo {
+      margin-left: .8rem;
+      margin-right: 0;
+      margin-top: 18px;
+      
+    }
+  
+    .nav li {
+      margin-right: 1.2rem;
+    }
+  
+    .btn-pesquisar{
+      margin-top: 10px;
+    }
+  
+  }
+  
+  
