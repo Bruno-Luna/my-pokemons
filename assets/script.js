@@ -1,26 +1,88 @@
 function loadpk() {
-    let pokeInput = document.querySelector('#pokeInput');
+    var pokeInput = document.querySelector('#pokeInput');
 
     var nameOrId = pokeInput.value;
     var url = 'http://pokeapi.co/api/v2/pokemon/' + nameOrId.toLowerCase();
 
     fetch(url)
         .then((response) => {
-            // esperamos receber em formato json
             return response.json();
         })
         .then((data) => {
-            // o que faremos com os dados informados no json
-            console.clear;
-            console.log(data);
-            document.getElementById('nome').innerHTML = data['name'];
-            document.getElementById('numero').innerHTML = data['id'];
+            document.getElementById('nome').innerHTML = data['name'].toLowerCase();
+            document.getElementById('numero').innerHTML = '#' + data['id'];
+            document.getElementById('numero').setAttribute('class', 'estilo_numero')
+            //let img = data['sprites']['other']['dream_world']['front_default'];
             let img = data['sprites']['front_default'];
+            let imgStyle = "width: 180px; height: 180px";
+            document.getElementById('pic').setAttribute('style', imgStyle);
             document.getElementById('pic').setAttribute('src', img);
         })
         .catch((erro) => {
             console.log("erro: " + erro);
         })
+
 }
 
-document.getElementById('btn1').onclick = loadpk;
+function changeCardColor() {
+    var pokeInput = document.getElementById('pokeInput');
+    console.log(pokeInput.value)
+
+    var nameOrId = pokeInput.value;
+    var url = 'http://pokeapi.co/api/v2/pokemon/' + nameOrId.toLowerCase();
+
+    fetch(url)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            let backgroundType = "card "; 
+            let type = data['types']['0']['type']['name']; 
+            backgroundType += type; 
+            document.getElementById('card').setAttribute('class', backgroundType);
+            
+        console.log(pokeInput)
+          
+
+        })
+        .catch((erro) => {
+            console.log("erro: " + erro);
+        })
+
+        console.log(pokeInput + nameOrId + url)
+};
+
+function todasFuncoes() {
+    loadpk();
+    changeCardColor();
+}
+
+function limpar() {
+    document.getElementById('card').setAttribute('class', 'card')
+
+    document.getElementById('nome').setAttribute('class', 'nome_default shadow m-auto-texto-card')
+    document.getElementById('nome').innerHTML = 'Escolha o seu'
+
+    let imgDefault = 'assets/img/project/pokeball.png'
+    document.getElementById('pic').setAttribute('src', imgDefault);
+    document.getElementById('pic').setAttribute('style', 'list-style: none;')
+
+    document.getElementById('numero').innerHTML = 'Pokémon'
+    document.getElementById('numero').setAttribute('class', 'numero_default shadow')
+
+    document.getElementById('pokeInput').value =''
+
+
+}
+
+var enter = document.getElementById("pokeInput");
+enter.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("btn1").click();
+  }
+});
+
+document.getElementById('btn1').onclick = todasFuncoes
+document.getElementById('btnLimpar').onclick = limpar
+
