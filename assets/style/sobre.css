@@ -4,6 +4,7 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
+    /* font-family: 'Press Start 2P', cursive; */
   }
   
   html, body{
@@ -11,7 +12,7 @@
     background-color: #313131;
   }
   
-  /* Nav */
+  /* Nav 
   .nav {
     background-color: #FF6B4A;
     height: 100%;
@@ -55,11 +56,12 @@
     padding-bottom: 5px;
     border-bottom: 1px solid #1F2020;
   }
+  */
   
   /* MAIN */
   
   main{
-    height: 85vh;
+    height: 1350px;
     width: 100%;
   }
 
@@ -70,25 +72,62 @@
     color: white;
   }
 
+  .box-sobre {
+    border-radius: 15px;
+    color: black;
+    background-color: antiquewhite;
+    border: 1px #083962 solid;
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .box-sobre p, h1, h3 {
+    padding-bottom: 20px;
+  }
+
   /* .imgLuna img, .imgIsa img {
     border-radius: 100%;
     box-shadow: 0px 0px 100px;
   } */
 
- main .container .boxLuna .contentLuna,
- main .container .boxIsa .contentIsa{
-  height: 40vh;
-  display: flex;
+
+
+ .boxDev{
+   color: black;
+   font-size: 21px;
+   padding: 10px;
+  border-radius: 30px;
+  border: #1a1a1a 2px solid;
+  background-color: #4353e441;
+  width: 63%;
+  margin: 20px auto 15px auto;
+  height: auto;
   align-items: center;
   justify-content: center;
+  font-family: 'Press Start 2P', cursive;
  }
 
-main .container .boxLuna .contentLuna img,
-main .container .boxIsa .contentIsa img{
+ .boxDev p {
+   padding: 10px;
+ }
+
+main .container .boxDev .contentDev img {
   border-radius: 100%;
 }
 
-  /*  FOOTER */
+
+
+main .container .boxLuna .contentLuna p,
+main .container .boxIsa .contentIsa p{
+  margin: 5px 0px 5px 0px
+}
+
+  /*  FOOTER 
   
   footer{
     border-top: 1px solid rgb(26, 26, 26);
@@ -117,6 +156,8 @@ main .container .boxIsa .contentIsa img{
   footer p a:hover{
     text-decoration:underline;
   }
+
+  */
   
   
   

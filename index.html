@@ -1,65 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>MyPokemon</title>
 </head>
+
 <body>
     <header>
         <nav class="nav">
             <img src="assets/img/project/logo.png" alt="Logo My Pokemons" class="logo">
-                <ul>
-                    <li>
-                        <a href="index.html" class="item-menu">Home</a>
-                    </li>
-                    <li>
-                        <a href="sobre.html" class="item-menu">Sobre</a>
-                    </li>
-                </ul>
+            <ul>
+                <li>
+                    <a href="index.html" class="item-menu">Home</a>
+                </li>
+                <li>
+                    <a href="sobre.html" class="item-menu">Sobre</a>
+                </li>
+            </ul>
         </nav>
     </header>
-    
+
     <body>
         <main>
             <label for="text" class="labelSearch">Escolha sua equipe Pokemon:</label>
             <!--<form class="inputs-buttons"></form> -->
-                <div class="search">
-                    <input type="text" class="pokeInput" placeholder="Digite o nome ou o número de um Pokémon" id="pokeInput">
-                    
-                    <button id="btn1" class="btn btn-pesquisar fire"></button>
-                    
-                    <button id="btnLimpar" class="btn btn-limpar electric">Limpar</button>
-                   
-                </div>
-                
+            <div class="search">
+                <input type="text" class="pokeInput" placeholder="Digite o nome ou o número de um Pokémon"
+                    id="pokeInput">
+
+                <button id="btn1" class="btn btn-pesquisar fire"></button>
+
+                <button id="btnLimpar" class="btn btn-limpar electric">Limpar</button>
+
+            </div>
+
             <!--</form>    -->
 
-        <div class="card" id="card">
-            <div id="nome">
-                <p class="nome_default shadow m-auto-texto-card">Escolha o seu</p>
+            <div class="card" id="card">
+                <div id="nome">
+                    <p class="nome_default shadow m-auto-texto-card">Escolha o seu</p>
+                </div>
+
+                <div class="imagem_default m-auto-texto-card">
+                    <img id="pic" src="assets/img/project/pokeball.png" style="list-style: none;">
+                </div>
+
+                <div id="numero">
+                    <p class="numero_default shadow">POKÉMON</p>
+                </div>
             </div>
 
-            <div class="imagem_default m-auto-texto-card" >
-                <img id="pic"  src="assets/img/project/pokeball.png" style="list-style: none;">
-            </div>
+        </main>
 
-            <div id="numero">
-                <p class="numero_default shadow">POKÉMON</p>
+        <footer>
+            <div class="dev">
+                <p>Desenvolvido com ❤️ por: <a href="https://github.com/Bruno-Luna">Bruno Luna</a> e <a
+                        href="https://github.com/isaiaszanoni">Isaías Rodrigues</a></p>
+                <p class="text-direitos">Alguns direitos reservados</p>
             </div>
-        </div>  
- 
-    </main>
-   
-    <footer>
-        <div class="dev">
-            <p>Desenvolvido com ❤️ por: <a href="https://github.com/Bruno-Luna">Bruno Luna</a> e <a href="https://github.com/isaiaszanoni">Isaías Rodrigues</a></p>
-            <p class="text-direitos">Alguns direitos reservados</p>
-        </div>
-    </footer>
-     
-     <script src="assets/script.js"></script>
-</body>
+            
+        </footer>
+
+        <script src="assets/script.js"></script>
+    </body>
+
 </html>

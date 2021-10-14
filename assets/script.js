@@ -75,6 +75,14 @@ function limpar() {
 
 }
 
+var enter = document.getElementById("pokeInput");
+enter.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("btn1").click();
+  }
+});
+
 document.getElementById('btn1').onclick = todasFuncoes
 document.getElementById('btnLimpar').onclick = limpar
 
