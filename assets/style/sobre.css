@@ -10,19 +10,19 @@
   html, body{
     font-family: 'Segoe UI', sans-serif;
     background-color: #313131;
-    
+    height: auto;
   }
   
   /* MAIN */
   
   main{
-    height: 160vh;
     width: 100%;
+    height: 110rem;
   }
 
   main .container{
     width: 100%;
-    height: 160vh;
+    height: 100rem;
     color: white;
    
   }
@@ -43,66 +43,135 @@
     line-height: 2;
   }
 
-  h3 + p{
+  h3 + p, p ~ p{
     font-size: 1.16rem;
   }
 
   
- .boxDev{
-  display: grid;
-  grid-template-rows:0;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
-  grid-gap: 40px;
-  color: rgb(255, 253, 253);
-  font-size: 1.2rem;
-  border-radius: 30px;
-  background-color: #4353e441;
-  font-family: 'Press Start 2P', cursive;
- }
+  .boxDev{
+      display: grid;
+      grid-template-rows:0;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+      color: rgb(255, 253, 253);
+      font-family: 'Press Start 2P', cursive;
+      }
 
- .boxDev p {
-   margin-top: 1.2rem;
-   line-height: 2;
- }
+  .boxDev p {
+    margin-top: 1.2rem;
+    line-height: 2;
+    }
 
- .container .contentDev{
-   width: 100%;
-   text-align: justify;
- }
-
-img {
-  display: block;
-  margin: 0 auto;
-}
-
-.contentDev img{
-  border-radius: 100%;
-}
-
-.textDev{
- font-size: 1.1rem;
- padding: 0 2rem;
-}
-
-.textDev img{
-  border-radius: 0;
-}
-
-.pokePreferido{
-  text-align: center;
-}
+  .container .contentDev{
+    width: 100%;
+    text-align: justify;
+    background-color: #4353e441;
+    border-radius: 30px;
 
 
-/* Media Queries */
+    }
 
-@media only screen and (max-width:715px){
+    img {
+      display: block;
+      margin: 0 auto;
+    }
 
-.boxDev{
-  display: grid;
-  grid-template-columns: auto auto;
+    .contentDev img{
+      border-radius: 100%;
+    }
 
-}
-}
+    .textDev{
+    font-size: 1.1rem;
+    padding: 0 2rem;
+    }
+
+    .textDev img{
+      border-radius: 0;
+    }
+
+    .pokePreferido{
+      text-align: center;
+    }
+
+
+    /* Media Queries */
+   
+    @media only screen and (min-width:300px) and (max-width:568px){
+
+      h1{
+        text-align: center;
+      }
+
+      .box-sobre {
+        height: auto;
+        margin-top: 0;
+      }
+
+      .boxDev{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+      }
+
+      main{
+        height: 610%;
+        width: 100%;
+      }
+
+      main .container{
+        width: 100%;
+        height: 600%;
+        margin: 1.4rem 0;
+      }
+
+      .textDev, .boxDev p {
+        font-size: 1rem;
+      }
+
+      .textDev{
+      padding: 1.4rem 1.4rem;
+      }
+
+      footer{
+        padding: 1.6rem;
+      }
+
+      footer .dev, .dev p, .dev a{
+        font-size: .7rem;
+      }
+
+      footer p.text-direitos {
+        font-size: .6rem;
+      }
+
+  }
+
+  @media only screen and (min-width:567px) and (max-width:978px){
+    
+    .box-sobre {
+      height: auto;
+      margin-top: 0;
+    }
+
+    .boxDev{
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    main{
+      height: 610%;
+      width: 100%;
+    }
+
+    main .container{
+      width: 100%;
+      height: 600%;
+      margin: 1.4rem 0;
+    }
+  }
+    
+    
+    
   
   
